@@ -8,8 +8,8 @@ var getFileContent = function(filename) {
     return buffer.toString();
 }
 
-pp.get('/', function(request, response) {
-  var readFile = "index.html");
+app.get('/', function(request, response) {
+  var readFile = "index.html";
   response.send(getFileContent(readFile));
 });
 
